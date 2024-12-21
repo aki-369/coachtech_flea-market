@@ -1,0 +1,67 @@
+/* ヘッダーの基本スタイル */
+header {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* ロゴのスタイル */
+.header_logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+header a img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* 中央の検索バー */
+header form {
+    flex-grow: 1;
+    text-align: center;
+}
+
+header input[type="text"] {
+    padding: 5px;
+    width: 70%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* ヘッダーの右側ボタン群 */
+header .btn-group {
+    display: flex;
+    gap: 10px;
+}
+
+header .btn-group a,
+header .btn-group button {
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ログイン、会員登録、出品ボタンのスタイル */
+header .btn-group a:hover,
+header .btn-group button:hover {
+    color: #ffcc00;
+}
